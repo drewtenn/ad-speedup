@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Ad Speedup - Skip Video Ads Faster",
+  "short_name": "Ad Speedup",
+  "version": "1.0.2",
+  "version_name": "1.0.2",
+  "description": "Automatically speed-up ads on videos. Save time, enhance viewing. Simple, fast, and user-friendly. Transform your browsing now!",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "minified/content-script.min.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
