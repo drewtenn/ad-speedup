@@ -16,7 +16,7 @@
         "https://*.youtube.com/*"
       ],
       "js": [
-        "minified/content-script.min.js"
+        "content-script.min.js"
       ],
       "run_at": "document_start"
     }
